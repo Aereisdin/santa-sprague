@@ -1,0 +1,65 @@
+[
+    {
+        "user_id": "1",
+        "chosen_person": "Unassigned",
+        "likes": "Awaiting assignment",
+        "description": "This is where you will get a special message from your chosen person",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRucjHQoWkNKBPfnd8BW7_sn4Jo8iwrhecQk__oLSyrNGvkJAbos_OwhDhXg&usqp=CAc"
+    },
+    {
+        "user_id": "2",
+        "chosen_person": "Unassigned",
+        "likes": "Awaiting assignment",
+        "description": "This is where you will get a special message from your chosen person",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRucjHQoWkNKBPfnd8BW7_sn4Jo8iwrhecQk__oLSyrNGvkJAbos_OwhDhXg&usqp=CAc"
+    },
+    {
+        "user_id": "3",
+        "chosen_person": "Unassigned",
+        "likes": "Awaiting assignment",
+        "description": "This is where you will get a special message from your chosen person",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRucjHQoWkNKBPfnd8BW7_sn4Jo8iwrhecQk__oLSyrNGvkJAbos_OwhDhXg&usqp=CAc"
+    },
+    {
+        "user_id": "4",
+        "chosen_person": "Unassigned",
+        "likes": "Awaiting assignment",
+        "description": "This is where you will get a special message from your chosen person",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRucjHQoWkNKBPfnd8BW7_sn4Jo8iwrhecQk__oLSyrNGvkJAbos_OwhDhXg&usqp=CAc"
+    },
+    {
+        "user_id": "5",
+        "chosen_person": "Unassigned",
+        "likes": "Awaiting assignment",
+        "description": "This is where you will get a special message from your chosen person",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRucjHQoWkNKBPfnd8BW7_sn4Jo8iwrhecQk__oLSyrNGvkJAbos_OwhDhXg&usqp=CAc"
+    },
+    {
+        "user_id": "6",
+        "chosen_person": "Unassigned",
+        "likes": "Awaiting assignment",
+        "description": "This is where you will get a special message from your chosen person",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRucjHQoWkNKBPfnd8BW7_sn4Jo8iwrhecQk__oLSyrNGvkJAbos_OwhDhXg&usqp=CAc"
+    },
+    {
+        "user_id": "7",
+        "chosen_person": "Unassigned",
+        "likes": "Awaiting assignment",
+        "description": "This is where you will get a special message from your chosen person",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRucjHQoWkNKBPfnd8BW7_sn4Jo8iwrhecQk__oLSyrNGvkJAbos_OwhDhXg&usqp=CAc"
+    },
+    {
+        "user_id": "8",
+        "chosen_person": "Unassigned",
+        "likes": "Awaiting assignment",
+        "description": "This is where you will get a special message from your chosen person",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRucjHQoWkNKBPfnd8BW7_sn4Jo8iwrhecQk__oLSyrNGvkJAbos_OwhDhXg&usqp=CAc"
+    },
+    {
+        "user_id": "9",
+        "chosen_person": "Unassigned",
+        "likes": "Awaiting assignment",
+        "description": "This is where you will get a special message from your chosen person",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRucjHQoWkNKBPfnd8BW7_sn4Jo8iwrhecQk__oLSyrNGvkJAbos_OwhDhXg&usqp=CAc"
+    }
+]

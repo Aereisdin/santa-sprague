@@ -1,19 +1,19 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 const UserData = require('./UserData.json');
-const OwnedPlantData = require('./OwnedPlantData');
-// This file empties the Plant collection and inserts the plants below
+const ChosenData = require('./ChosenData.json');
+//This is the file for seeding the initial data for the Secret Santa Projects
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/plantsy"
+  "mongodb://localhost/sprague-santa"
 );
 
-const seedOwned = async () => {
+const seedChosen = async () => {
   try {  
-        await db.OwnedPlant
+        await db.Chosen
               .deleteMany({})
-              .then(() => db.OwnedPlant.collection.insertMany(OwnedPlantData))
+              .then(() => db.Chosen.collection.insertMany(ChosenData))
               .then(data => {
                 console.log(data.result.n + " records inserted!");
                 process.exit(0);
@@ -46,6 +46,5 @@ const seedUsers = async () => {
 }
 process.exit(0);
 };
-seedOwned();
-seedPlants();
+seedChosen();
 seedUsers();

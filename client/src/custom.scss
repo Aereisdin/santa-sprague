@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("./Font/Raleway-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "RockSalt";
+  src: url("./Font/RockSalt-Regular.ttf");
+}
+
+/* Custom Variables */
+$background: rgb(5, 2, 23);
+$font-color-nav: #005a9c;
+$font-color-nav-hover: #3394d8;
+$Brand-color: #005a9c;
+
+/* NavBar Bootstrap Modification */
+$navbar-light-color: rgba($font-color-nav, 0.9);
+$navbar-light-hover-color: rgba($font-color-nav-hover, 0.7);
+$navbar-light-active-color: rgba($font-color-nav, 0.9);
+$navbar-light-disabled-color: rgba($font-color-nav, 0.3);
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-light-toggler-border-color: rgba($font-color-nav, 0.2);
+$navbar-light-brand-color: $font-color-nav;
+$navbar-light-brand-hover-color: $font-color-nav-hover;
+/* This import remains on the bottom of the modified styles  */
+@import "~bootstrap/scss/bootstrap";
+
+html,
+body {
+  height: 100%;
+  font-family: "Raleway";
+}
+nav {
+  font-size: 1.5em;
+  font-weight: 700;
+  background-color: transparent;
+  .navbar-brand {
+    background-color: transparent;
+    font-family: "RockSalt";
+    color: $Brand-color;
+    font-size: 2em;
+    z-index: 2;
+    align-content: center;
+  }
+  .navbar-nav button {
+    padding-top: 7px;
+    color: $Brand-color;
+    font-size: 1em;
+    font-weight: 700;
+    align-content: center;
+  }
+  .navbar-nav button:hover {
+    padding-top: 10px;
+    color: $font-color-nav-hover;
+    font-weight: 700;
+    align-content: center;
+  }
+  .navbar-nav a {
+    align-content: center;
+  }
+}
+body {
+  background-color: $background;
+}
+.spark {
+  background: url("sprague.svg");
+  background-repeat: no-repeat;
+  background-position-y: -250px;
+  background-position-x: -250px;
+  height: 500px;
+  width: 2000px;
+}

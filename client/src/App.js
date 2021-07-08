@@ -1,24 +1,64 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import API from "./utils/API";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Landing from "./pages/Landing";
+import User from "./pages/User"
+import Private from "./components/Private"
+import './App.scss';
+import UserContext from './utils/UserContext';
+import NavBar from './components/NavBar';
 
 function App() {
+  const [user, setUser] = useState({
+    id: null,
+    name: null,
+    email: null,
+    isAuthenticated: false
+  })
+
+  function login(user) {
+    setUser(user)
+  }
+
+  function logout() {
+    setUser({
+      id: null,
+      name: null,
+      email: null,
+      isAuthenticated: false
+    })
+  }
+
+  useEffect(() => {
+    const getUser = async () => {
+      const currentUser = await API.getUser()
+      console.log(currentUser.data)
+      if (currentUser.data.id) {
+        setUser({
+          id: currentUser.data.id,
+          name: currentUser.data.name,
+          email: currentUser.data.email,
+          isAuthenticated: true
+        })
+      }
+    }
+    getUser()
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <Router>
+        <UserContext.Provider value={{ user, login, logout }}>
+          <NavBar />
+          <Switch>
+            <Route exact path='/' component={Landing} />
+            <Private exact path='/profile' component={User} />
+          </Switch>
+        </UserContext.Provider>
+      </Router>
+
+    </>
   );
 }
 

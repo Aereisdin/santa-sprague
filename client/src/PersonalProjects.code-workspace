@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "../../../mountain-web-works"
+	},
+	{
+		"path": "../../../test-project"
+	},
+	{
+		"path": "../.."
+	}
+],
+  "settings": {
+    "git.ignoreLimitWarning": true
+  }
+}

@@ -34,39 +34,109 @@ nav {
   font-size: 1.5em;
   font-weight: 700;
   background-color: transparent;
+  border: solid 1.5px white;
   .navbar-brand {
     background-color: transparent;
     font-family: "RockSalt";
     color: $Brand-color;
     font-size: 2em;
-    z-index: 2;
-    align-content: center;
+    a {
+      color: $Brand-color;
+    }
   }
   .navbar-nav button {
     padding-top: 7px;
+    background-color: transparent;
     color: $Brand-color;
     font-size: 1em;
     font-weight: 700;
     align-content: center;
+    border: none;
   }
   .navbar-nav button:hover {
     padding-top: 10px;
+    // background-color: transparent;
     color: $font-color-nav-hover;
     font-weight: 700;
     align-content: center;
+    border: none;
+    transition: none !important;
   }
   .navbar-nav a {
-    align-content: center;
+    text-decoration: none;
   }
 }
 body {
   background-color: $background;
+}
+.modal-content {
+  border-radius: 20px;
+}
+.modal-header {
+  color: white;
+  background-color: $Brand-color;
+  button {
+    visibility: hidden;
+  }
+}
+.modal-body {
+  color: white;
+  background-color: $font-color-nav-hover;
+  text-align: end;
+  font-size: 1.25em;
+  font-weight: 600;
+  button {
+    background-color: $Brand-color;
+    color: White;
+    font-weight: 500;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 2%;
+    border: 1px solid rgba(#444, 0.5);
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, 0.2);
+  }
+}
+.form-group {
+  margin-bottom: 1%;
+  margin-right: 15%;
+  button:hover {
+    background-color: rgba($Brand-color, 0.5);
+  }
+}
+.modal-footer {
+  background-color: $Brand-color;
+  color: white;
+  button {
+    background-color: $font-color-nav-hover;
+    color: White;
+    font-weight: 500;
+    border: 1px solid rgba(#444, 0.5);
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, 0.2);
+  }
+  button:hover {
+    background-color: rgba($font-color-nav-hover, 0.5);
+  }
 }
 .spark {
   background: url("sprague.svg");
   background-repeat: no-repeat;
   background-position-y: -250px;
   background-position-x: -250px;
-  height: 500px;
-  width: 2000px;
+  height: 1000px;
+}
+.sparkLogo {
+  height: 100px;
+}
+.Welcome {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  border: 2px solid $Brand-color;
+  font-size: 1.25em;
+  font-weight: 600;
+  h1 {
+    font-size: 3em;
+    font-weight: 600;
+  }
 }

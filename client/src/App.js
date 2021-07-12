@@ -7,6 +7,7 @@ import Private from "./components/Private"
 import './App.scss';
 import UserContext from './utils/UserContext';
 import NavBar from './components/NavBar';
+import New from "./pages/New";
 
 function App() {
   const [user, setUser] = useState({
@@ -53,7 +54,9 @@ function App() {
           <NavBar />
           <Switch>
             <Route exact path='/' component={Landing} />
-            <Private exact path='/profile' component={User} />
+            <Route exact path='/info' component={New} />
+            <Route exact path='/specialplace' component={User} />
+            {/* <Private exact path='/specialplace' component={User} /> */}
           </Switch>
         </UserContext.Provider>
       </Router>

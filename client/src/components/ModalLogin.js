@@ -37,7 +37,7 @@ function LoginModal(props) {
           })
         })
         .then(res => {
-          history.push("/profile");
+          history.push("/specialplace");
         })
         .catch(err => { console.error(err) })
     };
@@ -47,7 +47,7 @@ function LoginModal(props) {
 
   return (
     <>
-    <span><Button variant="login" size="lg" onClick={() => setModal(true)}>Login</Button></span>
+    <span><Button size="lg" onClick={() => setModal(true)}>Login</Button></span>
 
       <Modal aria-labelledby="contained-modal-title-vcenter" centered show={modal} onHide={() => setModal(false)}>
         <Modal.Header closeButton>
@@ -58,13 +58,15 @@ function LoginModal(props) {
         <Modal.Body>
           <form className="form login-form">
             <div className="form-group email-login">
-              <label htmlFor="email-login">Email:</label>
+              <label htmlFor="email-login">Email: </label>
               <input className="form-input" type="text" id="email-login" onChange={event => setEmail(event.target.value.trim())} />
             </div>
+            
             <div className="form-group">
-              <label htmlFor="password-login">Password:</label>
+              <label htmlFor="password-login">Password: </label>
               <input className="form-input" type="password" id="password-login" onChange={event => setpassword(event.target.value.trim())} />
             </div>
+     
             <div className="form-group">
               <button className="btn-login-form" type="submit" onClick={loginFormHandler}>Login</button>
             </div>
@@ -72,18 +74,7 @@ function LoginModal(props) {
         </Modal.Body>
         <Modal.Footer>
           {/* <!-- Toogle to second dialog --> */}
-          <ModalSignUp />
-          <Button style={{
-            color: "#e4d7d0",
-            fontFamily: "Kiwi Maru",
-            fontWeight: 700,
-            backgroundColor: "#0a4158",
-            paddingLeft: "1em",
-            paddingRight: "1em",
-            paddingTop: "0.5em",
-            paddingBottom: "0.5em",
-            borderRadius: "10px"
-          }} onClick={() => setModal(false)}>Close</Button>
+          <Button  onClick={() => setModal(false)}>Close</Button>
         </Modal.Footer>
       </Modal>
     </>

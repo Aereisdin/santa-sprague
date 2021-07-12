@@ -3,7 +3,7 @@ import { Link, useHistory } from 'react-router-dom';
 import UserContext from "../utils/UserContext";
 import LoginModal from './ModalLogin';
 import API from '../utils/API';
-import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Navbar, Container, Nav, Image } from 'react-bootstrap';
 
 export default function NavBar() {
 
@@ -46,12 +46,14 @@ export default function NavBar() {
     return (
 
         <Navbar expand="lg">
-            <Container>
-                <Navbar.Brand href="#home">Sprague Family</Navbar.Brand>
+            <Container className="justify-content-between">
+                <Navbar.Brand className="p-0 m-0">{ document.location.pathname === "/specialplace" ?<Image src="sprague.svg" className="sparkLogo" /> :''}</Navbar.Brand>
+                <Navbar.Brand><Nav.Link href="/">Sprague Family</Nav.Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className=" justify-content-end">
-                        <Nav.Link href="./info">New here?</Nav.Link>
+                    <Nav>
+                        <Nav.Link href="/info">New here?</Nav.Link>
+                        <Nav.Link href="/specialplace">User Profile</Nav.Link>
                         {links}
                         {log_in_out_Link}
                     </Nav>

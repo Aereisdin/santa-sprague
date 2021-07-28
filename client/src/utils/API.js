@@ -2,15 +2,6 @@ import axios from "axios";
 
 export default {
 
-    // Axios functions for Plants
-    getPlants: function () {
-        return axios.get('/api/plants');
-    },
-
-    // Axios functions for users
-    getUsers: function () {
-        return axios.get('/gardeners');
-    },
 
     // Axios functions for single user
     logoutUser: function () {

@@ -20,11 +20,11 @@ export default function NavBar() {
     var links;
     var log_in_out_Link;
     if (user.isAuthenticated) {
-        links = <><Nav.Link to="/Santa">My Secret Santa</Nav.Link><Nav.Link href="/Profile">{user.name}'s Profile</Nav.Link></>;
+        links = <><Link to="/Santa">My Secret Santa</Link><Link to="/Profile">{user.name}'s Profile</Link></>;
 
         log_in_out_Link = <><Button className="nav-link" role="button" onClick={logoutUser}>Log Out</Button></>
     } else {
-        links = ''
+        links = <><Link to="/info">New here?</Link></>
 
         log_in_out_Link = <>
             <LoginModal />
@@ -34,13 +34,13 @@ export default function NavBar() {
     return (
 
         <Navbar expand="lg">
-            <Container className="justify-content-between">
-                <Navbar.Brand className="p-0 m-0">{ document.location.pathname === "/specialplace" ? <Image src="sprague.svg" className="sparkLogo" /> :''}</Navbar.Brand>
-                <Navbar.Brand><Nav.Link href="/">Sprague Family</Nav.Link></Navbar.Brand>
+            <Container >
+                <Navbar.Brand className="p-0 m-0">{ document.location.pathname === "/specialplace" || "/profile" || "/Santa" ? <Image src="sprague.svg" className="sparkLogo" /> :''}</Navbar.Brand>
+                <Navbar.Brand><Link to={ user.isAuthenticated ? "/specialplace" : "/" }>Sprague Family</Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav>
-                        <Nav.Link href="/info">New here?</Nav.Link>
+                        
                         
                         {links}
                         {log_in_out_Link}
@@ -48,7 +48,7 @@ export default function NavBar() {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-        // Nav code from main.handlebars modified with conditionals extracted as variables
+       
    
 
     )

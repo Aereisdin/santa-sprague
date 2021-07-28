@@ -1,14 +1,14 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 
-function User() {
+function Users() {
     return (
         <>
         <Container className="user" fluid>
-       This is where I will build out the user page
+       <p style={{color: "white"}}>This is where I will build out the user page</p>
         </Container>
         </>
     )
 }
 
-export default User
+export default Users

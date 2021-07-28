@@ -27,11 +27,12 @@ function LoginModal(props) {
       const body = { email, password };
       const header = { 'Content-Type': 'application/json' };
       API.logInUser(body, header)
+        // .then(res => { console.log(res)})
         .then(res => {
           login({
-            id: res.data.user.id,
-            name: res.data.user.name,
-            email: res.data.user.email,
+            id: res.data._id,
+            name: res.data.name,
+            email: res.data.email,
             isAuthenticated: true
 
           })

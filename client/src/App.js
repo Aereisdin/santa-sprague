@@ -30,21 +30,21 @@ function App() {
     })
   }
 
-  useEffect(() => {
-    const getUser = async () => {
-      const currentUser = await API.getUser()
-      console.log(currentUser.data)
-      if (currentUser.data.id) {
-        setUser({
-          id: currentUser.data.id,
-          name: currentUser.data.name,
-          email: currentUser.data.email,
-          isAuthenticated: true
-        })
-      }
-    }
-    getUser()
-  }, [])
+  // useEffect(() => {
+  //   const getUser = async () => {
+  //     const currentUser = await API.getUser()
+  //     console.log(currentUser.data)
+  //     if (currentUser.data.id) {
+  //       setUser({
+  //         id: currentUser.data.id,
+  //         name: currentUser.data.name,
+  //         email: currentUser.data.email,
+  //         isAuthenticated: true
+  //       })
+  //     }
+  //   }
+  //   getUser()
+  // }, [])
 
   return (
     <>
@@ -55,8 +55,7 @@ function App() {
           <Switch>
             <Route exact path='/' component={Landing} />
             <Route exact path='/info' component={New} />
-            <Route exact path='/specialplace' component={User} />
-            {/* <Private exact path='/specialplace' component={User} /> */}
+            <Private exact path='/specialplace' component={User} />
           </Switch>
         </UserContext.Provider>
       </Router>

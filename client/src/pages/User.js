@@ -5,7 +5,7 @@ function User() {
     return (
         <>
         <Container className="user" fluid>
-       
+       This is where I will build out the user page
         </Container>
         </>
     )

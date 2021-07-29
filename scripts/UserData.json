@@ -2,7 +2,7 @@
     {
       "name": "Stephanie",
       "email": "sal@hotmail.com",
-      "photo": "",
+      "photo": "./photos/Stephanie.png",
       "color": "Something wonderous",
       "animal": "Spider",
       "sportTeam": "Giants",
@@ -16,7 +16,7 @@
     {
       "name": "Bryan",
       "email": "lernantino@gmail.com",
-      "photo": "",
+      "photo": "./photos/Bryan.png",
       "color": "Something wonderous",
       "animal": "Spider",
       "sportTeam": "Giants",

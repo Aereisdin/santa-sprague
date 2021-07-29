@@ -12,6 +12,7 @@ $background: rgb(5, 2, 23);
 $font-color-nav: #005a9c;
 $font-color-nav-hover: #3394d8;
 $Brand-color: #005a9c;
+$Spark-color: #ffee59;
 
 /* NavBar Bootstrap Modification */
 $navbar-light-color: rgba($font-color-nav, 0.9);
@@ -171,4 +172,34 @@ body {
   padding-top: 1em;
   padding-bottom: 1em;
   border-radius: 10px;
+}
+.profile-photo {
+  margin-bottom: 5px;
+}
+.profile-head {
+  padding-top: 1em;
+  margin-bottom: 5px;
+  border: solid;
+  h4 {
+    color: $font-color-nav-hover;
+    padding-bottom: 1em;
+  }
+  color: $Brand-color;
+  background-color: white;
+  border-radius: 15px;
+
+  p {
+    font-size: 1.5em;
+  }
+}
+.profile-list {
+  padding-top: 10px;
+  border: solid;
+  margin-right: 5px;
+  background-color: white;
+  color: $Brand-color;
+  border-radius: 15px;
+  h4 {
+    color: $font-color-nav-hover;
+  }
 }

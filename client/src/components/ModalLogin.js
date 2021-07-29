@@ -33,6 +33,15 @@ function LoginModal(props) {
             id: res.data._id,
             name: res.data.name,
             email: res.data.email,
+            photo: res.data.photo,
+            color: res.data.color,
+            animal: res.data.animal,
+            sportTeam: res.data.sportTeam,
+            waistSize: res.data.waistSize,
+            shirtSize: res.data.shirtSize,
+            shoeSize: res.data.shoeSize,
+            hobbies: res.data.hobbies,
+            note: res.data.note,
             isAuthenticated: true
 
           })

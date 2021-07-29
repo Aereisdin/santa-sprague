@@ -16,6 +16,15 @@ function App() {
     id: null,
     name: null,
     email: null,
+    photo: null,
+    color: null,
+    animal: null,
+    sportTeam: null,
+    waistSize: null,
+    shirtSize: null,
+    shoeSize: null,
+    hobbies: null,
+    note: null,
     isAuthenticated: false
   })
 
@@ -24,29 +33,45 @@ function App() {
     setUser(user)
   }
 
+
   function logout() {
     setUser({
       id: null,
       name: null,
       email: null,
+      photo: null,
+      color: null,
+      animal: null,
+      sportTeam: null,
+      waistSize: null,
+      shirtSize: null,
+      shoeSize: null,
+      hobbies: null,
+      note: null,
       isAuthenticated: false
     })
   }
 
-  // useEffect(() => {
-  //   const getUser = async () => {
-  //     console.log(user)
-  //     if (user.data.id) {
-  //       setUser({
-  //         id: currentUser.data.id,
-  //         name: currentUser.data.name,
-  //         email: currentUser.data.email,
-  //         isAuthenticated: true
-  //       })
-  //     }
-  //   }
-  //   getUser()
-  // }, [])
+  useEffect(() => {
+    API.getUser(user.id)
+    .then(res => {
+      login({
+        id: res.data._id,
+        name: res.data.name,
+        email: res.data.email,
+        photo: res.data.photo,
+        color: res.data.color,
+        animal: res.data.animal,
+        sportTeam: res.data.sportTeam,
+        waistSize: res.data.waistSize,
+        shirtSize: res.data.shirtSize,
+        shoeSize: res.data.shoeSize,
+        hobbies: res.data.hobbies,
+        note: res.data.note,
+        isAuthenticated: true
+      })
+    })
+  }, !document.location.pathname === "/" || "/info")
 
   return (
     <>

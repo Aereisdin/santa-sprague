@@ -13,11 +13,11 @@ export default {
     signupUser: function (body, header) {
         return axios.post('/api/users/signup', body, header);
     },
-    getUser: function () {
-        return axios.get('/api/users');
+    getUser: function (id) {
+        return axios.get('/api/users/' + id);
     },
-    updateUser: function (id) {
-        return axios.put('/api/users/' + id);
+    updateUser: function (id , body) {
+        return axios.put('/api/users/' + id , body);
     },
     deleteUser: function (id) {
         return axios.delete('/api/users/' + id);

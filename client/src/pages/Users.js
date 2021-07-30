@@ -39,7 +39,7 @@ export default function Users() {
     return (
         <>
         <Container className="user" fluid>
-            <Row className="filler"></Row>   
+            <Row className="filler"><img src="./photos/sprague.svg" className="rotate-slow linear infinite" style={{zIndex: "-100"}}/></Row>   
             <Row className="justify-content-around">
                 <Col xs={10} sm={10} md={4} lg={4} className="profile-photo">
                     { user.photo ? <Image src={user.photo} thumbnail fluid/>:
@@ -150,7 +150,6 @@ export default function Users() {
                      </Row>
                 </Col>
             </Row>
-            <Row className="spark"></Row>
         </Container>
         </>
     )

@@ -47,14 +47,14 @@ export default function Users() {
                 </Col>
             <Col>
             <Row className="justify-content-around">
-                <Col xs={10} sm={10} md={7} lg={7} className="profile-head text-center">
+                <Col xs={10} sm={10} md={8} lg={7} className="profile-head text-center">
                     <h1>{user.name}'s Profile</h1><br/>
                     <h4>This is where you have a chance to influence the person shopping for you.</h4>
                 </Col>
             </Row>
             <Row className="filler"></Row>  
                     <Row className="justify-content-around">  
-                        <Col xs={10} sm={10} md={4} lg={4} className="profile-list text-start">
+                        <Col xs={10} sm={10} md={10} lg={4} className="profile-list text-start">
                             <h3>Favorite Color:</h3>
                             <ul>
                                 <li><h4>{Color}</h4></li>
@@ -89,7 +89,7 @@ export default function Users() {
                                 <li><h4>{ShoeSize}</h4></li>
                             </ul>
                         </Col>
-                        <Col xs={10} sm={10} md={6} lg={6} className="profile-list"><h2 className="text-start">Note:</h2><h4>{Note}</h4></Col>
+                        <Col xs={10} sm={10} md={10} lg={6} className="profile-list"><h2 className="text-start">Note:</h2><h4>{Note}</h4></Col>
                 </Row>
                      <Row className="justify-content-around">
                      <Row className="filler"></Row>  

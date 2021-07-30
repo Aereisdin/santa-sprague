@@ -16,7 +16,7 @@
     {
       "name": "Bryan",
       "email": "lernantino@gmail.com",
-      "photo": "./photos/Bryan.png",
+      "photo": "./photos/Bryan1.png",
       "color": "Something wonderous",
       "animal": "Spider",
       "sportTeam": "Giants",
@@ -58,7 +58,7 @@
     {
       "name": "Steven",
       "email": "the_blake@yahoo.com",
-      "photo": "",
+      "photo": "./photos/Steven.png",
       "color": "Something wonderous",
       "animal": "Spider",
       "sportTeam": "Giants",
@@ -72,7 +72,7 @@
     {
       "name": "Melissa",
       "email": "jordan96@msn.com",
-      "photo": "",
+      "photo": "./photos/Melissa.png",
       "color": "Something wonderous",
       "animal": "Spider",
       "sportTeam": "Giants",
@@ -100,7 +100,7 @@
     {
       "name": "Kyle",
       "email": "jordan98@msn.com",
-      "photo": "",
+      "photo": "./photos/Kyle.png",
       "color": "Something wonderous",
       "animal": "Spider",
       "sportTeam": "Giants",

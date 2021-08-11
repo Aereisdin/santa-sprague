@@ -10,10 +10,10 @@
 		"path": "../.."
 	},
 	{
-		"path": "../../../../Icarius/icarus-admin"
+		"path": "../../../ucd-sac-fsf-pt-12-2020-u-c"
 	},
 	{
-		"path": "../../../ucd-sac-fsf-pt-12-2020-u-c"
+		"path": "../../../amplify"
 	}
 ],
   "settings": {

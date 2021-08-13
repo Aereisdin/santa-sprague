@@ -1,21 +1,24 @@
 {
   "folders": [
-	{
-		"path": "../../../mountain-web-works"
-	},
-	{
-		"path": "../../../test-project"
-	},
-	{
-		"path": "../.."
-	},
-	{
-		"path": "../../../ucd-sac-fsf-pt-12-2020-u-c"
-	},
-	{
-		"path": "../../../amplify"
-	}
-],
+    {
+      "path": "../../../mountain-web-works"
+    },
+    {
+      "path": "../../../test-project"
+    },
+    {
+      "path": "../.."
+    },
+    {
+      "path": "../../../ucd-sac-fsf-pt-12-2020-u-c"
+    },
+    {
+      "path": "../../../amplify"
+    },
+    {
+      "path": "../../../Portfolio/aereisdin.github.io"
+    }
+  ],
   "settings": {
     "git.ignoreLimitWarning": true
   }

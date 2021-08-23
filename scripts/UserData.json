@@ -1,7 +1,7 @@
 [
     {
       "name": "Stephanie",
-      "email": "sal@hotmail.com",
+      "email": "stephanie@sprague.place",
       "photo": "./photos/Stephanie.png",
       "color": "Something wonderous",
       "animal": "Spider",
@@ -15,7 +15,7 @@
     },
     {
       "name": "Bryan",
-      "email": "lernantino@gmail.com",
+      "email": "bryan@sprague.place",
       "photo": "./photos/Bryan1.png",
       "color": "Something wonderous",
       "animal": "Spider",
@@ -29,7 +29,7 @@
     },
     {
       "name": "Kiel",
-      "email": "amiko2k20@aol.com",
+      "email": "kiel@sprague.place",
       "photo": "",
       "color": "Something wonderous",
       "animal": "Spider",
@@ -43,7 +43,7 @@
     },
     {
       "name": "Jonathan",
-      "email": "jordan95@msn.com",
+      "email": "jonathan@sprague.place",
       "photo": "./photos/Jonathan.png",
       "color":"Blue",
       "animal":"Narwhal",
@@ -57,7 +57,7 @@
     },
     {
       "name": "Steven",
-      "email": "the_blake@yahoo.com",
+      "email": "steven@sprague.place",
       "photo": "./photos/Steven.png",
       "color": "Something wonderous",
       "animal": "Spider",
@@ -71,7 +71,7 @@
     },
     {
       "name": "Melissa",
-      "email": "jordan96@msn.com",
+      "email": "melissa@sprague.place",
       "photo": "./photos/Melissa.png",
       "color": "Something wonderous",
       "animal": "Spider",
@@ -85,7 +85,7 @@
     },
     {
       "name": "Allison",
-      "email": "jordan97@msn.com",
+      "email": "allison@sprague.place",
       "photo": "./photos/Allison.png",
       "color": "Something wonderous",
       "animal": "Spider",
@@ -99,7 +99,7 @@
     },
     {
       "name": "Kyle",
-      "email": "jordan98@msn.com",
+      "email": "kyle@sprague.place",
       "photo": "./photos/Kyle.png",
       "color": "Something wonderous",
       "animal": "Spider",
@@ -113,8 +113,8 @@
     },
     {
       "name": "Brianna",
-      "email": "jordan99@msn.com",
-      "photo": "",
+      "email": "brianna@sprague.place",
+      "photo": "./photos/Brianna.png",
       "color": "Something wonderous",
       "animal": "Spider",
       "sportTeam": "Giants",

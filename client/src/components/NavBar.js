@@ -36,7 +36,7 @@ export default function NavBar() {
         <Navbar expand="lg">
             <Container >
                 <Navbar.Brand className="p-0 m-0">{ document.location.pathname === "/specialplace" || "/profile" || "/Santa" ? <Image src="./photos/sprague.svg" className="sparkLogo" /> :''}</Navbar.Brand>
-                <Navbar.Brand><Link to={ user.isAuthenticated ? "/specialplace" : "/" }>Sprague Family</Link></Navbar.Brand>
+                <Navbar.Brand><Link to={ user.isAuthenticated ? "/specialplace" : "/" }>The Sprague Place</Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav>

@@ -12,6 +12,6 @@
 # limitations under the License.
 #
 # [START bookshelf_app_yml]
-runtime: nodejs14
+runtime: nodejs
 env: flex
 # [END bookshelf_app_yml]

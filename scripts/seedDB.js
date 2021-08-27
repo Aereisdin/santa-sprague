@@ -5,7 +5,7 @@ const ChosenData = require('./ChosenData.json');
 //This is the file for seeding the initial data for the Secret Santa Projects
 
 mongoose.connect(
-  "mongodb+srv://aereisdin:ANgrc213@sprague-lace.soe13.mongodb.net/santa-sprague?retryWrites=true&w=majority"  ||
+  "mongodb+srv://@sprague-lace.soe13.mongodb.net/santa-sprague?retryWrites=true&w=majority"  ||
   "mongodb://localhost/sprague-santa"
 );
 

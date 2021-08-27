@@ -17,7 +17,7 @@ app.use(routes);
 
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb+srv://aereisdin:ANgrc213@sprague-lace.soe13.mongodb.net/santa-sprague?retryWrites=true&w=majority" || "mongodb://localhost/sprague-santa");
+mongoose.connect("mongodb+srv://@sprague-lace.soe13.mongodb.net/santa-sprague?retryWrites=true&w=majority" || "mongodb://localhost/sprague-santa");
 
 // Start the API server
 app.listen(PORT, function() {
